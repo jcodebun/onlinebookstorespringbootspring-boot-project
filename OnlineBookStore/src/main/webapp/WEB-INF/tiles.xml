@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC  
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<!-- Base define  -->
+ <definition name="base.definition" 
+        template="/WEB-INF/layouts/classic.jsp">  
+        <put-attribute name="title" value="" />  
+        <put-attribute name="header" value="/WEB-INF/basefragments/_header.jsp" />  
+        <put-attribute name="body" value="" />  
+        <put-attribute name="side" value="/WEB-INF/basefragments/_side.jsp" />  
+        <put-attribute name="footer" value="/WEB-INF/basefragments/_footer.jsp" />  
+ </definition> 
+ 
+    
+ <!-- Welcome Page  -->
+    <definition name="welcome" extends="base.definition">  
+        <put-attribute name="title" value="Welcome" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_welcome.jsp" />  
+    </definition>
+ <!-- Login Page  -->
+    <definition name="login" extends="base.definition">  
+        <put-attribute name="title" value="Login" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_login.jsp" />  
+    </definition> 
+  <!-- Add Book Page  -->
+    <definition name="addBook" extends="base.definition">  
+        <put-attribute name="title" value="Add Book" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_addbook.jsp" />  
+    </definition> 
+  <!-- Book List Page  -->
+    <definition name="bookList" extends="base.definition">  
+        <put-attribute name="title" value="Book List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_booklist.jsp" />  
+    </definition>
+  <!-- Home Page  -->
+    <definition name="bookListOnHomePage" extends="base.definition">  
+        <put-attribute name="title" value="Book List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_home.jsp" />  
+    </definition>
+  <!-- User Register Page  -->
+    <definition name="userRegister" extends="base.definition">  
+        <put-attribute name="title" value="User Register" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_userregister.jsp" />  
+    </definition> 
+  <!-- Booked Book Page  -->
+    <definition name="bookedBookList" extends="base.definition">  
+        <put-attribute name="title" value="Booked Book List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_bookedbooklist.jsp" />  
+    </definition>
+  <!-- Buy Book List Page  -->
+    <definition name="buyBookList" extends="base.definition">  
+        <put-attribute name="title" value="Buy Book List" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_buybooklist.jsp" />  
+    </definition> 
+  <!-- Payment Page  -->
+    <definition name="payment" extends="base.definition">  
+        <put-attribute name="title" value="Payment" />  
+        <put-attribute name="body" value="/WEB-INF/bodyfragments/_payment.jsp" />  
+    </definition>                    
+</tiles-definitions>       
